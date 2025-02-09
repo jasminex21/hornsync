@@ -3,10 +3,13 @@ import requests
 import bcrypt
 import streamlit as st
 import firebase_admin
-from firebase_admin import credentials, firestore
+from firebase_admin import credentials, firestore, storage
+from PIL import Image
+import io
 
 cred = credentials.Certificate('/home/jasmine/PROJECTS/hornsync/hornsync-8c2e1-412321627efe.json')
 firebase_admin.initialize_app(cred)
+                             # {"storageBucket": "hornsync-8c2e1.firebasestorage.app"})
 DB = firestore.client()
 
 ## -------------------------------------------------------------------------------------------------
@@ -65,6 +68,21 @@ def get_user_info(email):
     except Exception as e:
         print(f"Error getting user preferences: {str(e)}")
         return None
+    
+# def store_image(logo):
+#     image = Image.open(logo)
+#     img_bytes = io.BytesIO()
+#     image.save(img_bytes, format=image.format)
+#     img_bytes = img_bytes.getvalue()
+
+#     blob = BUCKET.blob(f"org_logos/{logo.name}")
+#     blob.upload_from_string(img_bytes, 
+#                             content_type=f"image/{logo.type.split('/')[-1]}")
+
+#     blob.make_public()
+#     image_url = blob.public_url
+
+#     return image_url
 
 def sign_in_with_email_and_password(email, password):
     request_ref = "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key={0}".format(st.secrets['FIREBASE_WEB_API_KEY'])
