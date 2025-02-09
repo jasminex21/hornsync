@@ -83,7 +83,7 @@ if "first_sign_in" not in st.session_state:
 def apply_theme(selected_theme):
     css = f"""
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap');
 
     .stApp > header {{
         background-color: transparent;
@@ -91,7 +91,7 @@ def apply_theme(selected_theme):
     .stApp {{
         background: {selected_theme['background_color']};
         color: {selected_theme["text_color"]};
-        font-family: 'Outfit', sans-serif;
+        font-family: "Comfortaa", serif;
     }}
     button[data-baseweb="tab"] {{
         background-color: transparent !important;
@@ -113,44 +113,44 @@ def apply_theme(selected_theme):
         color: {selected_theme["text_color"]};
         -webkit-text-fill-color: {selected_theme["text_color"]} !important;
         font-weight: 600 !important;
-        font-family: 'Outfit', sans-serif;
+        font-family: "Comfortaa", serif;
     }}
     p, ul, li {{
         color: {selected_theme["text_color"]};
         font-weight: 600 !important;
         font-size: large !important;
-        font-family: 'Outfit', sans-serif !important;
+        font-family: "Comfortaa", serif !important;
     }}
     h3, h2, h1, strong, h4 {{
         color: {selected_theme["text_color"]};
         font-weight: 900 !important;
-        font-family: 'Outfit', sans-serif !important;
+        font-family: "Comfortaa", serif !important;
     }}
 
-    h1 {{
-        font-size: 48px !important;
-    }}
+    # h1 {{
+    #     font-size: 45px !important;
+    # }}
 
     [data-baseweb="tag"] {{
         background: {selected_theme['button_color']} !important;
         color: {selected_theme["text_color"]};
-        font-family: 'Outfit', sans-serif;
+        font-family: "Comfortaa", serif;
     }}
     th {{
         color: {selected_theme["text_color"]} !important;
         font-weight: 900 !important;
         text-align: left !important;
-        font-family: 'Outfit', sans-serif;
+        font-family: "Comfortaa", serif;
     }}
     td {{
         color: {selected_theme["text_color"]} !important;
         font-weight: 600 !important;
-        font-family: 'Outfit', sans-serif;
+        font-family: "Comfortaa", serif;
     }}
-    .ag-header-row, .ag-header-row-column, .ag-header-container {{
+    .ag-header-row, .ag-header-row-column, .ag-header-container, container {{
         background-color: #C77532 !important; 
         color: white !important;
-        font-family: 'Poppins', sans-serif !important;
+        font-family: "Comfortaa", serif;
         font-size: 18px !important;
         font-weight: bold !important;
     }}
