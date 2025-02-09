@@ -11,6 +11,8 @@ credentials.json
 token.pickle
 .ipynb_checkpoints/
 .virtual_documents/
+credentials.yaml
+secrets.toml
 
 # Distribution / packaging
 .Python
