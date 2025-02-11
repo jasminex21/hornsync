@@ -1,13 +1,25 @@
-# hornsync
+# Hornsync
 
-### Basic idea proposal: 
-Some sort of web application that consolidates club / org information and events via google calendar. A club can register and add a bunch of information about their club, including categories (e.g. academic, social, fitness, etc.). And the main thing - they add their google calendar url, which already automatically syncs events to anyone who has their calendar saved. Then, any student who registers for an account (this registration process should be distinct from the club one) can choose clubs from a dropdown that they want to follow, and click some generate button, and then all events across all the clubs they have selected will be added to a new google calendar that they can subscribe to. 
+### Intro
 
-Ideally it would be nice if the app could offer suggestions for the student based on their selected interests / categories, but not sure if I will have time for that.
+This was my project submission for [WICS Hacks 2025](https://docs.google.com/presentation/d/161yaQLD1PE5aiPMBHRwf0SrRimzXRl19yhlTOGvUMZI/edit?usp=sharing). I worked in a solo team and ended up winning the prize category I'd been aiming for (Best UT Hack)! My [final presentation](FINAL_PRESENTATION.pdf) has further details on how I created Hornsync.
 
-#### Logistics and tech stack
-I'm no SWE or mobile app developer so I might stick w streamlit for my UI with hopes that the idea and execution is more heavily favored.
-* Python
-* Streamlit
-* Google Calendar API
-* Firebase or SQLite for user authentication and DB storage
+### Demo
+
+#### Log In Screen
+![alt text](image-1.png)
+
+#### Home Screen - Update Preferences & Generate Consolidated Calendar
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+#### Info Screen
+![alt text](image-4.png)
+
+#### Recommendations Screen
+![alt text](image-5.png)
+
+---
+
+### TODO
